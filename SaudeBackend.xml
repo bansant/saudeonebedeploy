@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SaudeBackend</name>
+    </assembly>
+    <members>
+        <member name="T:SaudeBackend.Controllers.Agreement.AgreementController">
+            <summary>
+             Role of Agreement
+            </summary>
+        </member>
+        <member name="M:SaudeBackend.Controllers.Agreement.AgreementController.BulkCreateOrUpdateAgreement(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.AgreementService.APIModels.AgreementView})">
+            <summary>
+            Method For Bulk CreateOrUpdate Agreement
+            </summary>
+            <param name="AgreementRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.Agreement.AgreementController.GetAllAgreement">
+            <summary>
+            Method For Get All Agreement
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.Agreement.AgreementController.BulkDeleteAgreementes(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.AgreementService.APIModels.AgreementView})">
+            <summary>
+            Method For Bulk Delete Agreement
+            </summary>
+            <param name="AgreementesRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.Agreement.AgreementController.AgreementListPaginated(SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.AgreementService.APIModels.AgreementListViewFilterableBody})">
+            <summary>
+            Method For AgreementList Paginated
+            </summary>
+            <param name="AgreementListViewRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.Agreement.AgreementController.GetAgreementByID(System.Guid)">
+            <summary>
+            Method For Get Agreement By ID
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SaudeBackend.Controllers.BillOfMaterial.BillOfMaterialController">
+            <summary>
+            Controller for Bill of Material
+            </summary>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BillOfMaterial.BillOfMaterialController.CreateOrUpdateBillOfMaterial(SaudeBackend.DomainApplication.BillOfMaterialService.APIModels.BillOfMaterialView)">
+            <summary>
+            Create and Update Bill of Material
+            </summary>
+            <param name="billOfMaterialRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BillOfMaterial.BillOfMaterialController.BulkCreateOrUpdateBillOfMaterial(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.BillOfMaterialService.APIModels.BillOfMaterialView})">
+            <summary>
+            Bulk Create and Update Bill of Material
+            </summary>
+            <param name="billOfMaterialRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BillOfMaterial.BillOfMaterialController.GetBillOfMaterialByID(System.Guid)">
+            <summary>
+            Method for Get Details by Id in bill of Material
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BillOfMaterial.BillOfMaterialController.GetAllBillOfMaterial">
+            <summary>
+            Get all Bil of Material data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BillOfMaterial.BillOfMaterialController.GetAllBillOfMaterialPagination(SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.BillOfMaterialService.APIModels.BillOfMaterialViewFilterableBody})">
+            <summary>
+            Get Bill of Material Pagenation data 
+            </summary>
+            <param name="billOfMaterialViewRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BillOfMaterial.BillOfMaterialController.DeleteBillOfMaterials(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.BillOfMaterialService.APIModels.BillOfMaterialView})">
+            <summary>
+            Delete Bill of Material
+            </summary>
+            <param name="billDeleteRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SaudeBackend.Controllers.BranchSalesTaxRule.BranchSalesTaxRuleController">
+            <summary>
+            Controller for BranchSalesTaxRule
+            </summary>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BranchSalesTaxRule.BranchSalesTaxRuleController.BulkCreateOrUpdateBranchSalesTaxRule(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.BranchSalesTaxRuleService.APIModels.BranchSalesTaxRuleView})">
+            <summary>
+            Method for Bulk Create Branch Sales Tax 
+            </summary>
+            <param name="branchSalesTaxRuleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BranchSalesTaxRule.BranchSalesTaxRuleController.CreateOrUpdateBranchSalesTaxRule(SaudeBackend.DomainApplication.BranchSalesTaxRuleService.APIModels.BranchSalesTaxRuleView)">
+            <summary>
+            Method for Create or Update Branch Sales Tax 
+            </summary>
+            <param name="branchSalesTaxRuleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BranchSalesTaxRule.BranchSalesTaxRuleController.DeleteBranchSalesTaxRule(SaudeBackend.DomainApplication.BranchSalesTaxRuleService.APIModels.BranchSalesTaxRuleView)">
+            <summary>
+            Method for Delete Branch Sales Tax 
+            </summary>
+            <param name="branchSalesTaxRuleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BranchSalesTaxRule.BranchSalesTaxRuleController.GetAllBranchSalesTaxRules">
+            <summary>
+            Method for GetAll Branch Sales Tax Rules
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BranchSalesTaxRule.BranchSalesTaxRuleController.BranchSalesTaxRuleListPaginated(SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.BranchSalesTaxRuleService.APIModels.BranchSalesTaxRuleListViewFilterableBody})">
+            <summary>
+            Method for GetAllPaginated Branch Sales Tax Rules
+            </summary>
+            <param name="branchSalesTaxRuleRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.BranchSalesTaxRule.BranchSalesTaxRuleController.GetBranchSalesTaxRuleByID(System.Guid)">
+            <summary>
+            Method for GetByID Branch Sales Tax Rules
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SaudeBackend.Controllers.ConfigurationDiagnosticCode.ConfigurationDiagnosticCodeController">
+            <summary>
+            Controller for Configuration Diagnostic Code
+            </summary>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ConfigurationDiagnosticCode.ConfigurationDiagnosticCodeController.CreateOrUpdateConfigurationDiagnosticCode(SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.APIModels.ConfigurationDiagnosticCodeViewItem)">
+            <summary>
+            Method for Create Or Update Configuration DiagnosticCode
+            </summary>
+            <param name="diagonosticCodeRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ConfigurationDiagnosticCode.ConfigurationDiagnosticCodeController.BulkCreateOrUpdateConfigurationDiagnosticCode(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.APIModels.ConfigurationDiagnosticCodeViewItem})">
+            <summary>
+            Method for Bulk Create Or Update Configuration DiagnosticCode
+            </summary>
+            <param name="diagnosticCodeRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ConfigurationDiagnosticCode.ConfigurationDiagnosticCodeController.DeleteBulkConfigurationDiagnosticCode(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.APIModels.ConfigurationDiagnosticCodeViewItem})">
+            <summary>
+            Method for Bulk Delete  Configuration DiagnosticCode
+            </summary>
+            <param name="diagnosticCodeRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ConfigurationDiagnosticCode.ConfigurationDiagnosticCodeController.GetConfigurationDiagnosticCodeList">
+            <summary>
+            Method for Get All ConfigurationDiagnosticCode 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ConfigurationDiagnosticCode.ConfigurationDiagnosticCodeController.GetConfigurationDiagnosticCodeListPaginated(SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.APIModels.ConfigurationDiagnosticCodeFilterableBody})">
+            <summary>
+            Method for Get ConfigurationDiagnosticCode List Paginated 
+            </summary>
+            <param name="diagnosticCodeRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ConfigurationDiagnosticCode.ConfigurationDiagnosticCodeController.GetConfigurationDiagnosticCodeByID(System.Guid)">
+            <summary>
+            Controller for Get ConfigurationDiagnosticCode By ID
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SaudeBackend.Controllers.ERPConnection.ERPConnectionController">
+            <summary>
+            Controller for ERP Connection 
+            </summary>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ERPConnection.ERPConnectionController.BulkCreateOrUpdateERPConnection(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.ERPConnectionService.APIModels.ERPConnectionViewItem})">
+            <summary>
+            Controller for BulkCreateOrUpdate ERPConnection
+            </summary>
+            <param name="erpConnectionRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ERPConnection.ERPConnectionController.CreateOrUpdatezERPConnection(SaudeBackend.DomainApplication.ERPConnectionService.APIModels.ERPConnectionViewItem)">
+            <summary>
+            Controller for CreateOrUpdate ERPConnection
+            </summary>
+            <param name="erpConnectionRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ERPConnection.ERPConnectionController.DeleteERPConnection(SaudeBackend.DomainApplication.ERPConnectionService.APIModels.ERPConnectionViewItem)">
+            <summary>
+            Controller for Delete ERPConnection
+            </summary>
+            <param name="erpConnectionRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ERPConnection.ERPConnectionController.GetAllERPConnection">
+            <summary>
+            Controller for Get All ERPConnection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ERPConnection.ERPConnectionController.GetERPConnectionListPaginated(SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.ERPConnectionService.APIModels.ERPConnectionFilterableBody})">
+            <summary>
+            Controller for ERPConnectionList Paginated
+            </summary>
+            <param name="erpConnectionRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ERPConnection.ERPConnectionController.GetERPConnectionByID(System.Guid)">
+            <summary>
+            Controller for GetERPConnection By ID
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SaudeBackend.Controllers.ItemGroup.ItemGroupController">
+            <summary>
+            Controller For ItemGroup
+            </summary>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ItemGroup.ItemGroupController.BulkCreateOrUpdateItemGroup(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.ItemGroupService.APIModels.ItemGroupView})">
+            <summary>
+            Method For Bulk Create Or Update ItemGroup
+            </summary>
+            <param name="itemGroupRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ItemGroup.ItemGroupController.CreateOrUpdateItemGroup(SaudeBackend.DomainApplication.ItemGroupService.APIModels.ItemGroupView)">
+            <summary>
+            Method For  Create Or Update ItemGroup
+            </summary>
+            <param name="itemGroupRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ItemGroup.ItemGroupController.DeleteItemGroup(SaudeBackend.DomainApplication.ItemGroupService.APIModels.ItemGroupView)">
+            <summary>
+            Method For  Delete ItemGroup
+            </summary>
+            <param name="itemGroupRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ItemGroup.ItemGroupController.GetAllItemGroup">
+            <summary>
+            Method For Get All ItemGroup
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ItemGroup.ItemGroupController.GetItemGroupListPaginated(SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.ItemGroupService.APIModels.ItemGroupListViewFilterableBody})">
+            <summary>
+            Method For ItemGroup List Paginated
+            </summary>
+            <param name="itemGroupRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ItemGroup.ItemGroupController.GetItemGroupByID(System.Guid)">
+            <summary>
+            Controller For Get ItemGroup By ID 
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ItemGroup.ItemGroupController.GetAllItemGroupForDropDown">
+            <summary>
+            Controller For Get All ItemGroup For DropDown
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ItemGroup.ItemGroupController.GetAllParentItemGroup">
+            <summary>
+            Controller For Get All Parent ItemGroup
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.ItemGroup.ItemGroupController.GetAllSubItemGroup">
+            <summary>
+            Controller For Get All Sub ItemGroup
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.TenantController.GetTenantList">
+            <summary>
+            Get All tenants
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.Controllers.TenantController.GetTenant(System.String)">
+            <summary>
+            Get tenant specific to a code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.AgreementService.AgreementService.BulkCreateOrUpdateAgreement(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.AgreementService.APIModels.AgreementView},System.Guid)">
+            <summary>
+            API For Bulk Create Or Update Agreement
+            </summary>
+            <param name="AgreementViews"></param>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.AgreementService.AgreementService.GetAgreementCode(System.Int32)">
+            <summary>
+            API For Get Agreement Code 
+            </summary>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.AgreementService.AgreementService.GetAllAgreement(System.Guid)">
+            <summary>
+            API For Get All Agreement List
+            </summary>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.AgreementService.AgreementService.BulkDeleteAgreementes(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.AgreementService.APIModels.AgreementView},System.Guid)">
+            <summary>
+            API For Bulk Delete Agreements from table
+            </summary>
+            <param name="AgreementViews"></param>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.AgreementService.AgreementService.GetAllAgreementesPaginated(System.Guid,SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.AgreementService.APIModels.AgreementListViewFilterableBody})">
+            <summary>
+            API For Get All Agreements List by filter
+            </summary>
+            <param name="tenantId"></param>
+            <param name="AgreementListViewRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.AgreementService.AgreementService.GetAgreementByID(System.Guid,System.Guid)">
+            <summary>
+            API For Get Agreement data By AgreementId
+            </summary>
+            <param name="tenantId"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.ConfigurationDiagnosticCodeService.CreateOrUpdateConfigurationDiagnosticCode(SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.APIModels.ConfigurationDiagnosticCodeViewItem,System.Guid)">
+            <summary>
+            API For add Or Update ConfigurationDiagnosticCode
+            </summary>
+            <param name="configurationDiagnosticCodeView"></param>
+            <param name="tenantId"></param>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.ConfigurationDiagnosticCodeService.BulkCreateOrUpdateConfigurationDiagnosticCode(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.APIModels.ConfigurationDiagnosticCodeViewItem},System.Guid)">
+            <summary>
+            API For Bulk add Or Update ConfigurationDiagnosticCode
+            </summary>
+            <param name="configurationDiagnosticCodeViews"></param>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.ConfigurationDiagnosticCodeService.BulkDeleteConfigurationDiagnosticCode(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.APIModels.ConfigurationDiagnosticCodeViewItem},System.Guid)">
+            <summary>
+            API For Bulk Delete ConfigurationDiagnosticCode
+            </summary>
+            <param name="configurationDiagnosticCodeViews"></param>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.ConfigurationDiagnosticCodeService.GetAllConfigurationDiagnosticCodes(System.Guid)">
+            <summary>
+            API For Get All ConfigurationDiagnosticCodes List 
+            </summary>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.ConfigurationDiagnosticCodeService.GetConfigurationDiagnosticCodeByID(System.Guid,System.Guid)">
+            <summary>
+            API For Get data  ConfigurationDiagnosticCodes By ConfigurationDiagnosticCodesID 
+            </summary>
+            <param name="tenantId"></param>
+            <param name="ConfigurationDiagnosticCodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.ConfigurationDiagnosticCodeService.ConfigurationDiagnosticCodePaginatedView(System.Guid,SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.ConfigurationDiagnosticCodeService.APIModels.ConfigurationDiagnosticCodeFilterableBody})">
+            <summary>
+            API For get ConfigurationDiagnosticCode data  by filter 
+            </summary>
+            <param name="tenantId"></param>
+            <param name="configurationDiagnosticCodeListViewRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ERPConnectionService.ERPConnectionService.BulkCreateOrUpdateERPConnection(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.ERPConnectionService.APIModels.ERPConnectionViewItem},System.Guid)">
+            <summary>
+            API For Bulk Create Or Update ERPConnection data Table 
+            </summary>
+            <param name="erpConnectionViews"></param>
+            <param name="tenantId"></param>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ERPConnectionService.ERPConnectionService.CreateOrUpdateERPConnection(SaudeBackend.DomainApplication.ERPConnectionService.APIModels.ERPConnectionViewItem,System.Guid)">
+            <summary>
+            API For Single  add Or Update ERPConnection data in table 
+            </summary>
+            <param name="erpConnectionView"></param>
+            <param name="tenantId"></param>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ERPConnectionService.ERPConnectionService.DeleteERPConnection(SaudeBackend.DomainApplication.ERPConnectionService.APIModels.ERPConnectionViewItem,System.Guid)">
+            <summary>
+            API For Delete ERPConnection data in Table 
+            </summary>
+            <param name="erpConnectionView"></param>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ERPConnectionService.ERPConnectionService.GetAllERPConnections">
+            <summary>
+            API For Get All ERPConnection List 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ERPConnectionService.ERPConnectionService.GetAllERPConnectionsPaginated(System.Guid,SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.ERPConnectionService.APIModels.ERPConnectionFilterableBody})">
+            <summary>
+            API For Get All ERPConnections data by filter 
+            </summary>
+            <param name="tenantId"></param>
+            <param name="erpConnectionViewRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ERPConnectionService.ERPConnectionService.GetERPConnectionByID(System.Guid,System.Guid)">
+            <summary>
+            API For Get ERPConnection data  By ERPConnectionID
+            </summary>
+            <param name="tenantId"></param>
+            <param name="erpConnectionViewId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityResourceService.FacilityResourceService.CreateOrUpdateFacilityResource(SaudeBackend.DomainApplication.FacilityResourceService.APIModels.FacilityResourceView,System.Guid)">
+            <summary>
+            API For add Or Update data in FacilityResource table 
+            </summary>
+            <param name="facilityResourceView"></param>
+            <param name="tenantId"></param>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityResourceService.FacilityResourceService.BulkCreateOrUpdateFacilityResource(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.FacilityResourceService.APIModels.FacilityResourceView},System.Guid)">
+            <summary>
+            API For Bulk add Or Update data in FacilityResource 
+            </summary>
+            <param name="facilityResourceViews"></param>
+            <param name="tenantId"></param>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityResourceService.FacilityResourceService.GetAllFacilityResource(System.Guid)">
+            <summary>
+            API For Get All FacilityResource List 
+            </summary>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityResourceService.FacilityResourceService.BulkDeleteFacilityResource(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.FacilityResourceService.APIModels.FacilityResourceView},System.Guid)">
+            <summary>
+            API For Bulk Delete from FacilityResource 
+            </summary>
+            <param name="facilityResourceViews"></param>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityResourceService.FacilityResourceService.GetAllFacilityResourcePaginated(System.Guid,SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.FacilityResourceService.APIModels.FacilityResourceListViewFilterableBody})">
+            <summary>
+            API For filter List Of FacilityResource
+            </summary>
+            <param name="tenantId"></param>
+            <param name="facilityResourceListViewRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityResourceService.FacilityResourceService.GetFacilityResource(System.Guid,System.Guid)">
+            <summary>
+            API For search in FacilityResource data By FacilityResourceID 
+            </summary>
+            <param name="tenantId"></param>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityService.FacilityService.BulkCreateOrUpdateFacility(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.FacilityService.APIModels.FacilityView},System.Guid)">
+            <summary>
+            API For Bulk add Or Update in Facility table 
+            </summary>
+            <param name="facilityViews"></param>
+            <param name="tenantId"></param>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityService.FacilityService.CreateOrUpdateFacility(SaudeBackend.DomainApplication.FacilityService.APIModels.FacilityView,System.Guid)">
+            <summary>
+            API For Single  add Or Update in  Facility table 
+            </summary>
+            <param name="facilityView"></param>
+            <param name="tenantId"></param>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityService.FacilityService.DeleteFacility(SaudeBackend.DomainApplication.FacilityService.APIModels.FacilityView,System.Guid)">
+            <summary>
+            API For Delete Facility data 
+            </summary>
+            <param name="facilityView"></param>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityService.FacilityService.GetAllFacilitys">
+            <summary>
+            API For all Facility List  from facility table 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityService.FacilityService.GetAllFacilitysPaginated(System.Guid,SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.FacilityService.APIModels.FacilityFilterableBody})">
+            <summary>
+            API For Get All Facility  List  by filter 
+            </summary>
+            <param name="tenantId"></param>
+            <param name="facilityViewRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.FacilityService.FacilityService.GetFacilityByID(System.Guid,System.Guid)">
+            <summary>
+            API  For search in  Facility by FacilityID 
+            </summary>
+            <param name="tenantId"></param>
+            <param name="facilityViewId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ItemGroupService.ItemGroupService.BulkCreateOrUpdateItemGroup(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.ItemGroupService.APIModels.ItemGroupView},System.Guid)">
+            <summary>
+            API For Bulk Create Or Update in ItemGroup
+            </summary>
+            <param name="itemGroupViews"></param>
+            <param name="tenantId"></param>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ItemGroupService.ItemGroupService.CreateOrUpdateItemGroup(SaudeBackend.DomainApplication.ItemGroupService.APIModels.ItemGroupView,System.Guid)">
+            <summary>
+            API For Single  Create Or Update in ItemGroup
+            </summary>
+            <param name="itemGroupView"></param>
+            <param name="tenantId"></param>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ItemGroupService.ItemGroupService.DeleteItemGroup(SaudeBackend.DomainApplication.ItemGroupService.APIModels.ItemGroupView,System.Guid)">
+            <summary>
+            API For Delete ItemGroup data 
+            </summary>
+            <param name="itemGroupView"></param>
+            <param name="tenantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ItemGroupService.ItemGroupService.GetAllParentItemGroup">
+            <summary>
+            API For Get All Parent ItemGroup
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ItemGroupService.ItemGroupService.GetAllSubItemGroup">
+            <summary>
+            API For Get All Sub-ItemGroup
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ItemGroupService.ItemGroupService.GetAllItemGroups">
+            <summary>
+            API For Get All ItemGroups List with data 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ItemGroupService.ItemGroupService.GetAllItemGroupsPaginated(System.Guid,SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.ItemGroupService.APIModels.ItemGroupListViewFilterableBody})">
+            <summary>
+            API For Get All ItemGroups List Filter 
+            </summary>
+            <param name="tenantId"></param>
+            <param name="itemGroupViewRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ItemGroupService.ItemGroupService.GetItemGroupByID(System.Guid,System.Guid)">
+            <summary>
+            API For Get ItemGroup data  By ItemGroupID
+            </summary>
+            <param name="tenantId"></param>
+            <param name="ItemGroupViewId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeBackend.DomainApplication.ItemGroupService.ItemGroupService.GetAllItemGroupForDropDown">
+            <summary>
+            API For Get All ItemGroup For DropDown
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SaudeBackend.DomainInfrastructure.Repository.Common.PaginationSpecification">
+            <summary>
+            Algorithm of Pagination Spec
+            </summary>
+        </member>
+        <member name="T:SaudeOneApi.Controllers.FacilityResource.FacilityResourceController">
+            <summary>
+            controller for FacilityResource 
+            </summary>
+        </member>
+        <member name="M:SaudeOneApi.Controllers.FacilityResource.FacilityResourceController.CreateOrUpdateFacilityResource(SaudeBackend.DomainApplication.FacilityResourceService.APIModels.FacilityResourceView)">
+            <summary>
+            Method for CreateOrUpdate FacilityResource
+            </summary>
+            <param name="FacilityResourceViewRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeOneApi.Controllers.FacilityResource.FacilityResourceController.BulkCreateOrUpdateFacilityResource(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.FacilityResourceService.APIModels.FacilityResourceView})">
+            <summary>
+            Method For BulkCreateOrUpdate FacilityResource
+            </summary>
+            <param name="facilityResourceRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeOneApi.Controllers.FacilityResource.FacilityResourceController.GetAllFacilityResources">
+            <summary>
+            Method For GetAll FacilityResource
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeOneApi.Controllers.FacilityResource.FacilityResourceController.BulkDeleteBranches(System.Collections.Generic.IEnumerable{SaudeBackend.DomainApplication.FacilityResourceService.APIModels.FacilityResourceView})">
+            <summary>
+            Method For BulkDelete FacilityResource
+            </summary>
+            <param name="facilityResourceRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeOneApi.Controllers.FacilityResource.FacilityResourceController.BranchListPaginated(SaudeBackend.DomainApplication.Widget.ListViewRequest{SaudeBackend.DomainApplication.FacilityResourceService.APIModels.FacilityResourceListViewFilterableBody})">
+            <summary>
+            Method for Paginated FacilityResourceList
+            </summary>
+            <param name="facilityResourceListViewRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SaudeOneApi.Controllers.FacilityResource.FacilityResourceController.GetUser(System.Guid)">
+            <summary>
+            Controller For GetFacilityResource By ID 
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
